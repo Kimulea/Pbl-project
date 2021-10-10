@@ -8,13 +8,7 @@ namespace Pbl.Dal.EntityConfiguration
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder
-                .Property(x => x.BirthDate)
-                .HasColumnType("Date");
-
-            builder
-                .Property(x => x.BirthDate)
-                .HasDefaultValueSql("getdate()");
+            
         }
     }
 }

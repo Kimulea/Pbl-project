@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Pbl.Dal;
 
 namespace Pbl.Dal.Migrations
 {
     [DbContext(typeof(PblDbContext))]
-    partial class PblDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211010114628_add-identity-card")]
+    partial class addidentitycard
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

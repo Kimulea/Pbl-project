@@ -7,6 +7,6 @@ namespace Pbl.Domain.Auth
 {
     public class User: IdentityUser<int>
     {
-        public DateTime BirthDate { get; set; }
+        public IdentityCard IdentityCard { get; set; }
     }
 }
